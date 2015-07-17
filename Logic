@@ -1,0 +1,6 @@
+The following steps are executed in sequence
+Step 1: Spin up a Redis container.
+Step 2: Spin up logstash Container with persistent Shipper configuration and logs. Link logstash container with Redis; Exposed ports should be mapped for demonstraion purpose
+Step 3: Spin up Elastic Search container with persistent configuration and logs. Exposed ports should be mapped for demonstration purpose.
+Step 4: Spin up logstash Container with persistent Collector Configuration and logs. Link Logstash container with Redis container. Link logtash container with Elastic Search container. Exposed ports are mapped (For demonstration purpose).
+Step 5: Spin up Kibana Container with persistent configuration and logs. Exposed ports should be mapped.

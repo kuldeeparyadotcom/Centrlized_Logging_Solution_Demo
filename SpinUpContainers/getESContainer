@@ -1,0 +1,2 @@
+ES_CONFIG_DIR=/home/kd/Centrlized_Logging_Solution_Demo/Configurations/es/config/
+sudo docker run --name="es" -v "$ES_CONFIG_DIR":/usr/share/elasticsearch/config -P -d elasticsearch

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo "Welcome to Centralized Logging Solution Demo"
+echo "*********************************************"
+
+echo "Trying to start Redis Docker Container.."
+SpinUpContainers/getRedisContainer
+
+echo "Trying to start Logstash instance with Shipper configuration.."
+SpinUpContainers/getShipperLogstashContainer
+
+echo "Trying to start Elastic Search instance.."
+SpinUpContainers/getESContainer
+
+echo "Trying to start Logstash Instance with Indexer Configuration.."
+SpinUpContainers/getIndexerLogstashContainer
+
+echo "Trying to start Kibana instance to visualize data stored in Elastic Search.."
+SpinUpContainers/getKibanaContainer
+
+echo "If everything goes fine, hit the following URL"
+echo "http://<YourServerIP>:5601"
+
+echo "Thank You for using Centralized Logging Demo!"
+echo "For any query: Please feel free to email: kuldeeparyadotcom@gmail.com"
+

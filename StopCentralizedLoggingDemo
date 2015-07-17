@@ -1,0 +1,24 @@
+#!/bin/bash
+
+echo "Welcome to Centralized Logging Solution Demo"
+echo "*********************************************"
+
+echo "Trying to stop Redis Docker Container.."
+sudo docker rm -f redis
+
+echo "Trying to start Logstash instance with Shipper configuration.."
+sudo docker rm -f ShipperLogstash
+
+echo "Trying to start Elastic Search instance.."
+sudo docker rm -f es
+
+echo "Trying to start Logstash Instance with Indexer Configuration.."
+sudo docker rm -f IndexerLogstash
+
+echo "Trying to start Kibana instance to visualize data stored in Elastic Search.."
+sudo docker rm -f Kibana
+
+echo "If everything goes fine, All running Docker cotainers used in Centralized Logging Solution should have been stopped.""
+
+echo "Thank You for using Centralized Logging Demo!
+echo "For any query: Please feel free to email: kuldeeparyadotcom@gmail.com"

@@ -1,0 +1,2 @@
+APACHE_CONFIG_DIR=/home/kd/Centrlized_Logging_Solution_Demo/Configurations/apache2/htdocs
+sudo docker run --name="ApacheServer" -P -v "$APACHE_CONFIG_DIR":/usr/local/apache2/htdocs/ -d httpd:2.4

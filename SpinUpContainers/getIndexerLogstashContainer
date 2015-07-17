@@ -1,0 +1,2 @@
+INDEXER_LOGSTASH_CONFIG_DIR=/home/kd/Centrlized_Logging_Solution_Demo/Configurations/logstash/indexer/config-dir
+sudo docker run --name="IndexerLogstash" -v "$INDEXER_LOGSTASH_CONFIG_DIR":/config-dir --link redis:redis --link es:es -P -d logstash logstash -f /config-dir/logstash.conf
