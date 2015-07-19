@@ -1,2 +1,2 @@
-SHIPPER_LOGSTASH_CONFIG_DIR=/home/kd/Centrlized_Logging_Solution_Demo/Configurations/logstash/shipper/config-dir
+SHIPPER_LOGSTASH_CONFIG_DIR=$(pwd)/Configurations/logstash/shipper/config-dir
 sudo docker run --name="ShipperLogstash" -v "$SHIPPER_LOGSTASH_CONFIG_DIR":/config-dir --link redis:redis -P -d logstash logstash -f /config-dir/shipper.conf

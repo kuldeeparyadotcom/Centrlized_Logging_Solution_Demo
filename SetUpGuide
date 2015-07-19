@@ -1,0 +1,10 @@
+
+How to set up code and start demo
+1. Check out code from GitHub Repository "https://github.com/kuldeeparyadotcom/Centrlized_Logging_Solution_Demo"
+2. Execute the start up script "StartCentralizedLoggingDemo"
+3. Deploy the Shipper code to hosts where you want to collect logs from
+4. On Remote hosts start the Shipper by executing script "StartShipper"
+
+How to stop Centrazlied Logging Solution Demo
+1. Stop all the containers running using script "StartCentralizedLoggingDemo  StopCentralizedLoggingDemo"
+2. Stop Shipper container on all remote hosts using script "StopShipper"
