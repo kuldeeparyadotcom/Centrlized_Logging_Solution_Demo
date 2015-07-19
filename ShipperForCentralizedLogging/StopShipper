@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Trying to stop Logstash instance with Shipper configuration.."
+sudo docker rm -f ShipperLogstash

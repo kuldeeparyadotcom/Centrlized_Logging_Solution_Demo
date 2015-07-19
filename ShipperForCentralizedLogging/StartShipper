@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Trying to start Logstash instance with Shipper configuration.."
+SpinUpContainers/getShipperLogstashContainer
+
+echo "If everything goes fine, shipper should start sending logs to Redis container running on Central logging server in this demo."
+echo "For any query: Please feel free to email: kuldeeparyadotcom@gmail.com"
+
